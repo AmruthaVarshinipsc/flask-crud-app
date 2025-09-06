@@ -1,6 +1,147 @@
-body {
-  background: #8E2DE2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*
+ * Enhanced CSS for a modern CRUD app interface.
+ * Based on the user's existing code, with a focus on polished aesthetics.
+ *
+ * Key enhancements:
+ * - A refined color palette for a sophisticated look.
+ * - Deeper, more realistic box shadows for a floating effect.
+ * - Improved typography using a modern font.
+ * - Cohesive button styles with hover animations for better user feedback.
+ */
 
+/* General Styles & Typography */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f0f4f8; /* A light, soft background */
+    margin: 0;
+    color: #334e68; /* Dark, readable text color */
 }
+
+/* Container alignment */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+    gap: 40px;
+    padding: 0 20px; /* Add padding for small screens */
+}
+
+/* Ensure the layout wraps on smaller screens */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+    }
+}
+
+/* Card (form box) */
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* A softer, larger shadow */
+    padding: 30px;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Table wrapper */
+.table-wrapper {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    /* Changed this to hide any overflow and prevent the scroll bar */
+    overflow: hidden;
+    flex-grow: 2; /* Increased width, now takes up more available space */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Table itself */
+.table {
+    margin: 0;
+    border-radius: 12px;
+    width: 100%;
+    border-collapse: collapse; /* Better for rounded corners and spacing */
+}
+
+.table th {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* Modern gradient for the header */
+    color: #fff;
+    text-align: center;
+    /* Let the text wrap to avoid overflow */
+    white-space: normal;
+    font-weight: 600;
+    padding: 14px 16px;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    /* Let the text wrap to avoid overflow */
+    white-space: normal;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0; /* Subtle divider between rows */
+}
+
+.table tr:last-child td {
+    border-bottom: none; /* No divider on the last row */
+}
+
+.table tbody tr:hover {
+    background-color: #f8fcfd; /* Light highlight on hover */
+}
+
+/* Buttons inside table */
+.btn-container {
+    display: flex;
+    gap: 8px; /* Space between buttons */
+    justify-content: center;
+}
+
+.table .btn {
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-edit {
+    background-color: #48bb78; /* Green */
+    color: #fff;
+}
+
+.btn-edit:hover {
+    transform: translateY(-2px);
+    background-color: #38a169;
+    box-shadow: 0 4px 8px rgba(72, 187, 120, 0.3);
+}
+
+.btn-delete {
+    background-color: #ef4444; /* Red */
+    color: #fff;
+}
+
+.btn-delete:hover {
+    transform: translateY(-2px);
+    background-color: #dc2626;
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+*/
