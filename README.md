@@ -5,7 +5,7 @@
 ### Installation
 
 ```bash
-git clone https://github.com/FaztWeb/flask-crud-contacts-app
+git clone https://github.com/AmruthaVarshinipsc/flask-crud-app
 cd flask-crud-contacts-app
 pip install -r requirements.txt
 python app/main.py
